@@ -26,7 +26,7 @@ def set_seed(seed: int = 42) -> None:
     print(f"Random seed set as {seed}")
 
 
-set_seed(5)
+#set_seed(5)
 # Hyper Parameters
 EPOCH = 60              # train the training data n times, to save time, we just train 1 epoch
 BATCH_SIZE = 50

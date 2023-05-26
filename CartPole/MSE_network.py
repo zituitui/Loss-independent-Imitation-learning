@@ -25,7 +25,7 @@ def set_seed(seed: int = 42) -> None:
     #os.environ["PYTHONHASHSEED"] = str(seed)
     print(f"Random seed set as {seed}")
 
-set_seed(1)
+#set_seed(1)
 # Hyper Parameters
 EPOCH = 60              # train the training data n times, to save time, we just train 1 epoch
 BATCH_SIZE = 50
@@ -139,7 +139,7 @@ def select_action_mse(state,lor):
 
 #test env
 env = gym.make("CartPole-v1",max_episode_steps=250)
-num_episodes = 15
+num_episodes = 200
 reward_list = []
 for i_episode in range(num_episodes):
     # Initialize the environment and get it's state
